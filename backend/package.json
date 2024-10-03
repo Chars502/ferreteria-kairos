@@ -1,4 +1,11 @@
 {
+  "name": "mi-proyecto-ferreteria",
+  "version": "1.0.0",
+  "description": "Proyecto de sistema de ferretería con Node.js, Express y MySQL",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
   "dependencies": {
     "bcrypt": "^5.1.1",
     "bcryptjs": "^2.4.3",
@@ -7,5 +14,7 @@
     "express": "^4.19.2",
     "jsonwebtoken": "^9.0.2",
     "mysql2": "^3.11.0"
-  }
+  },
+  "author": " ",
+  "license": "ISC"
 }
