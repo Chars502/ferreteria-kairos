@@ -1,0 +1,18 @@
+/* Estilo para centrar el login en la pantalla y darle un poco de margen */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f5f5f5;
+  }
+  
+  .paper {
+    padding: 20px;
+    margin-top: 50px;
+  }
+  
+  .button {
+    margin-top: 20px;
+  }
+  
