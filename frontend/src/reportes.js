@@ -68,7 +68,7 @@ function Reportes() {
     const doc = new jsPDF();
     doc.text('Reporte de Ventas', 20, 10);
     doc.autoTable({
-      head: [['Producto', 'Marca', 'Tipo de Medida', 'Cantidad', 'Precio de Costo', 'Precio de Venta', 'Total', 'Usuario']],
+      head: [['Producto', 'Marca', 'Tipo de Medida', 'Cantidad', 'Precio de Costo', 'Precio de Venta', 'Total']],
       body: ventas.map(venta => [
         venta.producto || 'No disponible',
         venta.marca || 'No disponible',
