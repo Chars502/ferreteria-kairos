@@ -209,7 +209,6 @@ function Reportes() {
                   <TableCell>Precio de Costo</TableCell>
                   <TableCell>Precio de Venta Unitario</TableCell>
                   <TableCell>Total</TableCell>
-                  <TableCell>Usuario</TableCell>
                   <TableCell>Fecha</TableCell>
                 </TableRow>
               </TableHead>
@@ -227,7 +226,6 @@ function Reportes() {
                     </TableCell>
                     <TableCell>{`$${parseFloat(venta.precio_unitario).toFixed(2)}`}</TableCell>
                     <TableCell>{`$${parseFloat(venta.total).toFixed(2)}`}</TableCell>
-                    <TableCell>{venta.usuario || 'N/A'}</TableCell>
                     <TableCell>{new Date(venta.fecha).toLocaleDateString()}</TableCell>
                   </TableRow>
                 ))}
