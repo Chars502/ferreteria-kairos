@@ -299,13 +299,12 @@ app.get('/api/ventas', async (req, res) => {
            p.tipo_medida, 
            p.precio_compra,  
            p.precio_venta AS precio_unitario, 
-           u.nombre AS usuario,  
            v.fecha,  -- Asegúrate de que el campo fecha esté aquí
            dv.total 
     FROM detalle_ventas dv
     JOIN productos p ON dv.producto_id = p.id
     JOIN ventas v ON dv.venta_id = v.id
-    JOIN usuarios u ON v.usuario_id = u.id
+    
   `;
 
   const queryParams = [];
